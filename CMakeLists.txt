@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.8)
 
-set(HEADER_FILES ${PROJECT_SOURCE_DIR}/Biblioteki/glad-master/include/glad/glad.h ${PROJECT_SOURCE_DIR}/Biblioteki/glad-master/include/KHR/khrplatform.h)
+set(HEADER_FILES ${PROJECT_SOURCE_DIR}/Biblioteki/glad/include/glad/glad.h ${PROJECT_SOURCE_DIR}/Biblioteki/glad/include/KHR/khrplatform.h)
 
 add_library(glad
 	src/glad.c
@@ -8,4 +8,4 @@ add_library(glad
 	${HEADER_FILES}
 )
 
-target_include_directories(glad PRIVATE ${PROJECT_SOURCE_DIR}/Biblioteki/glad-master/include)
+target_include_directories(glad PRIVATE ${PROJECT_SOURCE_DIR}/Biblioteki/glad/include)
