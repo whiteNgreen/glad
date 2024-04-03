@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.8)
-
+project(gladProj)
 set(HEADER_FILES ${CMAKE_SOURCE_DIR}/include/glad/glad.h ${CMAKE_SOURCE_DIR}/include/KHR/khrplatform.h)
 
 add_library(glad
